@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #canvas {
+            margin-top: 20px;
+        }
+
+        .flex {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .flex input {
+            margin-left: 20px;
+        }
+
+        .flex p {
+            margin-left: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="s1.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="1000" height="500" style="border:1px solid #000000;"></canvas>
+    <div class="flex">
+        <div class="radio flex">
+            <div>
+                <p>선택</p>
+                <input type="radio" name="menu" value="선택">
+            </div>
+            <div>
+                <p>자유곡선</p>
+                <input type="radio" name="menu" value="자유곡선">
+            </div>
+            <div>
+                <p> 직선</p>
+
+                <input type="radio" name="menu" value="직선">
+            </div>
+            <div>
+                <p>사각형</p>
+                <input type="radio" name="menu" value="사각형">
+            </div>
+            <div>
+                <p>원</p>
+                <input type="radio" name="menu" value="원">
+            </div>
+            <div>
+                <p>문자</p>
+                <input type="radio" name="menu" value="문자">
+            </div>
+        </div>
+        <button type="btn" class="reset">초기화</button>
+        <button type="btn" class="del">지우기</button>
+        <div class="design">
+            두께<input type="number" value="20">
+            글자크기<input type="number" value="16">
+            색상
+            <select name="color" id="">
+                <option value="black">검은색</option>
+                <option value="red">빨간색</option>
+                <option value="blue">파란색</option>
+                <option value="yellow">노란색</option>
+            </select>
+        </div>
+        <div class="download flex">
+            <a href="" download> <button type="button" >다운로드</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
